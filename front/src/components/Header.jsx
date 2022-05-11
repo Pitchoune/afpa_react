@@ -22,6 +22,11 @@ const Header = () => {
 							</Link>
 						</li>
 						<li className={(nav) => (nav.isActive ? "active" : "")}>
+							<Link className="nav-link" to="/clients/ajout">
+								Ajout
+							</Link>
+						</li>
+						<li className={(nav) => (nav.isActive ? "active" : "")}>
 							<Link className="nav-link" to="/test">
 								Test
 							</Link>
