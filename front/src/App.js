@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Test from './pages/Test';
 import PageClient from './pages/PageClient';
 import PageAjout from './pages/PageAjout';
+import SuppClient from './components/SuppClient';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/test" element={<Test />} />
         <Route path="/clients/:id" element={<PageClient />} />
         <Route path="/clients/ajout" element={<PageAjout />} />
+        <Route path="/clients/supp/:id" element={<SuppClient />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 const VoirClient = () => {
   const [client, setClient] = useState('');
@@ -24,6 +24,7 @@ const VoirClient = () => {
 					Société : {client.societe} <br/>
 					CA : {client.ca}
 				</p>
+				<Link to={`/clients/supp/${client.id}`} className="btn btn-danger mr-5">Supprimer</Link>
 			</div>
 		</div>
 	</div>
